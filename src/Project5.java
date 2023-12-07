@@ -4,6 +4,6 @@ public class Project5 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-	}
+	}//end main method
 
-}
+}//end Project5 class
