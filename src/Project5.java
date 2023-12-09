@@ -1,7 +1,17 @@
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Scanner;
-
+/**
+ * COP 3530: Project 5 - Hash Tables
+ * <p>
+ * Project5 class is the main class for the project 5 program. The
+ * class reads in user input from the console to operate the program. The
+ * user supplies the file to be read in, and then chooses menu options to
+ * perform certain manipulations on the data being stored. 
+ * 
+ * @author Riley Tittle
+ * @version 12.9.2023
+ */
 public class Project5 {
 	public static void main(String[] args) {
 		System.out.print("COP3530 Project 5\nHash Tables\nEnter the file name: ");
@@ -31,7 +41,7 @@ public class Project5 {
 			long countryArea = Long.parseLong(lineItems[4]);
 			theHashTable.insert(countryName, countryPop, countryArea);
 		}
-		System.out.println("There were 128 country records read into the hash table.");
+		System.out.println("\nThere were 128 country records read into the hash table.\n");
 		
 		boolean continueProgram = true;
 		do {
@@ -101,7 +111,8 @@ public class Project5 {
 					}
 				}while(invalidInput);
 				theHashTable.insert(nameToInsert, popToInsert, areaToInsert);
-				System.out.println(nameToInsert + " is inserted to hash table");
+				System.out.println();
+				System.out.println(nameToInsert + " is inserted to hash table\n");
 				break;
 			case 4:
 				System.out.print("Enter country name: ");
