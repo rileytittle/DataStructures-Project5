@@ -1,4 +1,3 @@
-import java.awt.desktop.SystemSleepEvent;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Scanner;
@@ -34,7 +33,6 @@ public class Project5 {
 		}
 		System.out.println("There were 128 country records read into the hash table.");
 		
-		int menuOption;
 		boolean continueProgram = true;
 		do {
 			System.out.println("1) Print hash table");
@@ -119,5 +117,6 @@ public class Project5 {
 			}//end switch
 		}while(continueProgram);
 		System.out.println("Have a nice day!");
+		in.close();
 	}//end main method
 }//end Project5 class
