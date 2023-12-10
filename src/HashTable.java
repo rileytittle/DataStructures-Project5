@@ -6,7 +6,7 @@
  * and display information about the Nodes in the hashtable which store information about countries.  
  * 
  * @author Riley Tittle
- * @version 12.9.2023
+ * @version 12.10.2023
  */
 public class HashTable {
 	private LinkedList[] hashArray;
@@ -43,7 +43,7 @@ public class HashTable {
 		Node result = hashArray[hashValue].findNode(country);
 		if(result == null){
 			System.out.println();
-			System.out.println(country + " is not in hash table");
+			System.out.println(country + " is not in hash table\n");
 			return -1;
 		}
 		else if(result.name.equals(country)){
@@ -52,7 +52,7 @@ public class HashTable {
 		}
 		else{
 			System.out.println();
-			System.out.println(country + " is not in hash table");
+			System.out.println(country + " is not in hash table\n");
 			return -1;
 		}
 	}//end find method
